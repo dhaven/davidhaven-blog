@@ -1,2 +1,4 @@
 [submodule "themes/blowfish"]
 	url = https://github.com/dhaven/blowfish.git
+	path = themes/blowfish
+	branch = main
