@@ -1,6 +1,6 @@
 ---
 title: "SR-stats"
-draft: true
+draft: false
 
 showDate : false
 showDateUpdated : false
@@ -21,9 +21,26 @@ layoutBackgroundHeaderSpace: false
 
 ---
 
-| Type | Timespan | Programming Language | Main library used/ relied on | Concepts |
-|------|----------|----------------------|------------------------------|----------|
-| Web app | Feb, 2022 - Now |  Javascript | NextJS, Antlr4, MongoDB, graph.js | Tree parsing, grammar |
+<table class="p-4 rounded-md drop-shadow-md dark:bg-blue-900 bg-blue-100">
+  <thead>
+    <tr>
+      <th class="px-4">Type</th>
+      <th>Duration</th>
+      <th>Programming Language</th>
+      <th>Libraries</th>
+      <th>Concepts</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="p-4">Web app</td>
+      <td>Feb, 2022 - Now</td>
+      <td>Javascript</td>
+      <td>NextJS, Antlr4, MongoDB, graph.js, TailwindCSS</td>
+      <td>Tree parsing, grammar </td>
+    </tr>
+  </tbody>
+</table>
 
 
 Star Realms is a fast-paced 2 player card game in which you construct a fleet of dangerous interstellar ships that you
@@ -36,21 +53,19 @@ then view details statistics.
 
 ## Architecture
 Once the user has finished a game of Star Realms he should copy the game data from the options menu and paste it
-into the SR-stats app. So far this is the only way to transfer a game between the 2 apps. 
-SR-stats is as simple web app built using NextJS (a React framework). It relies on a parser to build the AST representation
-of the game data and a visitor then traverses to tree a constructs a json representation of the game which is
-then stored on the MongoDB cloud.
+into the SR-stats app. Currently this is the only way to transfer a game between the 2 apps. 
+SR-stats is as simple web app built using NextJS (a React framework). The main role of the backendd is to
+parse the input file, generate an AST and traverse the tree in order to end up with json representation of the game which is
+stored on the MongoDB cloud.
 
 ![architecture](/img/arch-srstats.png)
 
 ## What I got right
 
-A lot of the things I got right came from mistakes I made building my first app Clipshare. You can read more about this here.
-
 1. **Focus on core features and have a POC out quickly**. Within 4 months of starting the development of this app I had 
-something to show to the community. It didn't have all the features I wanted it to have but it worked and it gave me the 
-opportunity to collect feedback from the users and validate if this is something that they actually find useful
-2. **Keep it simple and cheap**: Only spend time on things that add value to the users right now and don't try to future
+something to show to the community. It only had a small set of features but it worked and it gave me the 
+opportunity to collect feedback from the users and validate that this is something worth building.
+2. **Keep it simple and cheap**: Only spend time on things that add value to the users and don't try to future
 proof anything. I used the NextJS framework to build my ReactJS app and used Vercel to handle automatic deployment from
 my Github repo. This saved me a lot of time.
 3. **Build for well-known customers**. I knew who I was building this for and how to reach them (Facebook group, subreddit,
@@ -69,4 +84,31 @@ I thought value could still be delivered.
 
 ## Takeaways
 
+So far this has been a great learning experience. From the technical side I got to work with ASTs and grammar and spend time building
+the UI and UX. I found the UI and UX design particularly challenging given my lack of experience in this domain. I am nonthemless
+happy with how the app looks today which is the result of multiple UI iterations.
+
+From a human level, putting something I built in front of users. Listening to feedback and building a community around the app 
+were all things I was new at and were very challenging. 
+
 ## Screenshots
+
+Here are some figma designs of the different iterations the desktop UI went through.
+
+### V1
+
+<img class="w-1/2" src="sr-stats-desktop-v1.png" />
+
+### V2
+
+<div class="flex flex-row flex-wrap gap-2">
+  <img src="sr-stats-desktop-v2-1.png" />
+  <img src="sr-stats-desktop-v2-2.png" />
+</div>
+
+### V3
+
+<div class="flex flex-row flex-wrap gap-2">
+  <img src="sr-stats-desktop-v3-1.png" />
+  <img src="sr-stats-desktop-v3-2.png" />
+</div>

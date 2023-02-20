@@ -22,14 +22,14 @@ layoutBackgroundHeaderSpace: false
 
 I'm a passionate system engineer with strong experience in Cloud technologies. Over the last 5 years I have led to completion
 many projects involving Cloud infrastructure, developer tooling and security. Those projects have given me the opportunity to 
-refine a set of guiding principles which help me in my work. Some of those principles include:
+refine a set of guiding **principles** which help me in my work. Some of those principles include:
 - Everything as code
 - Ownership
 - least privilege
 - Knowledge sharing
 - Build for the long term
 
-I have also developed a methodology which helps me proceed in a systematic way through the stages of a project. The broad steps are:
+I have also developed a **methodology** which helps me proceed in a systematic way through the stages of a project. The broad steps are:
 - An initial document that lays out the who,why and how. "Why" this is something that is worth spending time on. This is should always
 be understood as "how is this going to add value". Who will be involved in the project and how will the identified "problem" will be solved.
 - Proceed to decompose the project into sub-problems with clearly defined timeline.
@@ -42,7 +42,7 @@ decisions taken are consistent whith previous work and the company's values.
 Having had ownership of all aspects of a SAAS production infrastructure I have acquired a broad set of intersecting knowledge which helps
 me to quickly be familiar with new concepts and learn new technologies when needed.
 
-Words that are part of my daily vocabulary include
+## Vocabulary
 
 <style type="text/css"><!-- #htmltagcloud{
 
@@ -64,10 +64,11 @@ Words that are part of my daily vocabulary include
 <div id="htmltagcloud"> <span id="0" class="wrd tagcloud3"><a href="#tagcloud">argocd</a></span> <span id="1" class="wrd tagcloud4"><a href="#tagcloud">atlantis</a></span> <span id="2" class="wrd tagcloud1"><a href="#tagcloud">automation</a></span> <span id="3" class="wrd tagcloud10"><a href="#tagcloud">aws</a></span> <span id="4" class="wrd tagcloud1"><a href="#tagcloud">datadog</a></span> <span id="5" class="wrd tagcloud3"><a href="#tagcloud">declarative</a></span> <span id="6" class="wrd tagcloud0"><a href="#tagcloud">docker</a></span> <span id="7" class="wrd tagcloud3"><a href="#tagcloud">github-actions</a></span> <span id="8" class="wrd tagcloud4"><a href="#tagcloud">iam</a></span> <span id="9" class="wrd tagcloud0"><a href="#tagcloud">istio</a></span> <span id="10" class="wrd tagcloud8"><a href="#tagcloud">kubernetes</a></span> <span id="11" class="wrd tagcloud3"><a href="#tagcloud">security-groups</a></span> <span id="12" class="wrd tagcloud1"><a href="#tagcloud">simplicity</a></span> <span id="13" class="wrd tagcloud6"><a href="#tagcloud">terraform</a></span> <span id="14" class="wrd tagcloud7"><a href="#tagcloud">vpc</a></span> </div>
 
 
+## Links
 
-[CKA pdf](./david-haven-cka.pdf)
+[My CKA certification](./david-haven-cka.pdf)
 
-[resume pdf](./david-haven-resume.pdf)
+[My resume in pdf format](./david-haven-resume.pdf)
 ## Open source contributions
 
 Over the years I've contributed to the following open source projects:

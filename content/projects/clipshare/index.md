@@ -20,11 +20,11 @@ layoutBackgroundHeaderSpace: false
 #groupByYear : false
 
 ---
-<table class="rounded-md drop-shadow-md bg-primary-100 dark:bg-primary-900">
+<table class="p-4 rounded-md drop-shadow-md dark:bg-blue-900 bg-blue-100">
   <thead>
     <tr>
       <th class="px-4">Type</th>
-      <th>Timespan</th>
+      <th>Duration</th>
       <th>Programming Language</th>
       <th>Libraries</th>
       <th>Concepts</th>
@@ -44,6 +44,7 @@ layoutBackgroundHeaderSpace: false
 Clipshare is the first project that I ever took from an idea to a production ready app. Pundits and news commentators
 on Twitter often use short video clips to provide context for their tweets. A typical workflow for producing
 these video clips will involve the following steps:
+
 1. Download the source video to computer.
 2. Clip the video to only include what is relevant for the commentary.
 3. Post tweet with video clip.
@@ -112,9 +113,9 @@ Suprisingly, as I was working on my app Youtube was working on a similar feature
 released in July 14, 2021. See the video presentation [here](https://www.youtube.com/watch?v=A63imEmP_-I)
 
 ## Screenshots
-<div>
-  <img src="start_editing.png" />
-  <img src="finish_editing.png" />
-  <img src="send_tweet.png" />
-  <img src="tweet_send.png" />
+<div class="flex flex-row gap-4 flex-wrap">
+  <img class="h-64" src="start_editing.png" />
+  <img class="h-64" src="finish_editing.png" />
+  <img class="h-64" src="send_tweet.png" />
+  <img class="h-64" src="tweet_send.png" />
 </div>
