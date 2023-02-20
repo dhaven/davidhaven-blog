@@ -16,13 +16,12 @@ showEdit: false
 showViews: true
 showLikes: true
 layoutBackgroundHeaderSpace: false
-layout: "simple"
 
 #groupByYear : false
 
 
 ---
-<table style="width: 50%;">
+<table>
     <thead>
         <tr>
             <th>Title</th>

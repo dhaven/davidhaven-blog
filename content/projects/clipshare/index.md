@@ -42,23 +42,25 @@ Clipshare simplifies this process by allowing the user to reach the same goal wi
 
 ## What I got right
 
-1. **Making a browser extension**. The idea of going for a browser extension was to limit the scope of the
-app by the fact that the UI you can work with is quite limited. It's tempting to have grand plans for 
-a revolutionary app then never get to the end because it is too much work. Here I wanted to make sure
-that I would be able to complete the project
+1. **Making a browser extension**. Creating a browser extension as my first app was motivated by the fact 
+that browser extensions are naturally quite limited in terms of functionalities due to their small UI. 
+It's tempting to have grand plans for a revolutionary app then never get to the end because it is 
+too much work. Here I wanted to make sure that I would be able to complete the project and have a scope 
+that was manageable.
 2. **An app that is an optimization**. Users are usually quite keen to find ways to do certain things faster.
-3. **The app user flow**.
+I believe it's generally easier to onboard users to an app that provides an improvement on top of something
+the user is already doing than try to sell the user on something new.
+3. **The app user flow**. The app user flow is quite elegant and works well.
 
 ## What I got wrong
 
 1. **Handling video data** : Video data is very expensive to manage in terms of storage and transfer costs.
 There is also no economies of scale because the cost would increase linearly as the number of active users.
 As a solo developer with little funding this was probably not a smart idea. There are some solutions to mitage this.
-For example by not downloading the video source to the backend and instead streaming it directly to the frontend
+For example by not downloading the video source to the backend and instead streaming it directly from youtube to the frontend
 I could reduce storage and transfer costs.  
-
 2. **Self hosting the backend** : With my background in systems engineering I wanted to build the cloud infrastructure
-from scratch using AWS. This included setting S3 buckets, dynamoDB tables, VPC, security groups, etc...
+from scratch using AWS. This included setting up S3 buckets, dynamoDB tables, VPC, security groups, etc...
 This was a poor choice for two reasons:
     -  **It takes time and it does not provide value for the customer**. The choice to self host was purely motivated 
     by an interest in building cloud infrastructure.
@@ -75,19 +77,24 @@ data: {
 }
 {{< /chart >}}
 
-3. **Not using a frontend framework**: 
-4. **Not knowing who my customers are**: I had no idea how to reach customers and let people know my app exists.
-5. **Overengineering certain aspects**: Being able to distinguish between critical features and nice to haves is
-very important if you want to be able to ship quickly. For example I wanted to make sure that if the user left the extension
-while the flow was in progress he could resume where he had left off when he came back to the app. This required implementing various caching mechanisms and was certainly not a critical feature.
-7. **Creating an "unfriendly" app from the point of vue of Youtube and Twitter**. Clipshare is both "youtube downloader" and "custom twitter client". Neither of these concepts are much appreciated by Youtube or Twitter.
-This means that I'm playing a risky game where I could get cut off from the Twitter API.This observation also led me to 
-develop the app for Firefox which means cutting myself off from most of my potential customers.
+3. **Not knowing who my customers are**: I didn't have a well defined target customers that I knew would find this app useful.
+It was more of a hunch that I thought this is something people would find useful. Furthermore once the app was built I had no plan
+on how to reach customers and let people know my app exists.
+4. **Overengineering certain aspects**: Being able to distinguish between critical features and nice-to-have features is
+very important if you want to be able to ship quickly. One feature which took me some time to implement and in hindsight
+wasn't a critical one is the implementation of a cache mechanism which ensures that if the user leaves the app he could 
+resume where he had left off when he came back to the app.
+5. **Creating an "unfriendly" app from the point of vue of Youtube and Twitter**. Clipshare is both "youtube downloader" 
+and "custom twitter client". Neither of these concepts are much appreciated by Youtube or Twitter.
+This means that I'm playing a risky game where I could get cut off from the Twitter API or not get accepted on the Chrome
+store. It is this observation which also led me to develop the app for Firefox only which meant cutting myself off 
+from most of my potential customers.
 
 ## Takeaways
 
+Great learning experience in some many ways
 Suprisingly, as I was working on my app Youtube was working on a similar feature called Youtube clips which was
-released in July 14, 2021 [source](https://www.youtube.com/watch?v=A63imEmP_-I)
+released in July 14, 2021. See the video presentation [here](https://www.youtube.com/watch?v=A63imEmP_-I)
 
 ## Screenshots
 

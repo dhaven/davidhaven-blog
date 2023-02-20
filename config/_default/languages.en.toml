@@ -15,8 +15,8 @@ dateFormat = "2 January 2006"
 [author]
   name = "David Haven"
   image = "img/logo-dhaven.png"
-  headline = "headline"
-  bio = "Systems, open source"
+  headline = "Systems engineer, problem solver"
+  bio = ""
   links = [
      { github = "https://github.com/dhaven" },
      { linkedin = "https://linkedin.com/in/david-haven" },

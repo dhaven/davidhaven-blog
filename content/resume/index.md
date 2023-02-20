@@ -41,8 +41,6 @@ layoutBackgroundHeaderSpace: false
 
 I deliver value by ...
 
-Open source contributions I have made
-
 ## Experience
 
 Over the last 5 years I have been involved in many projects including security, developer tooling and compute.

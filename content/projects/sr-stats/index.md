@@ -26,8 +26,7 @@ layoutBackgroundHeaderSpace: false
 | Web app | Feb, 2022 - Now |  Javascript | NextJS, Antlr4, MongoDB, graph.js | Tree parsing, grammar |
 
 
-## What is Star Realms?
-Star Realms is a fast-paced 2 player card game in which you construct a fleet of dangerous interstallar ships that you
+Star Realms is a fast-paced 2 player card game in which you construct a fleet of dangerous interstellar ships that you
 use to inflict damage on your oponent and reduce his life to 0 before he does the same to you. It's available on steam
 and as a mobile app.
 The Star Realms app doesn't provide any statistics once you have finished a game nor does it provide a history
@@ -46,37 +45,28 @@ then stored on the MongoDB cloud.
 
 ## What I got right
 
-A lot of the things I got right came from mistakes I made building my first app Clipshare. You can learn more about this here.
+A lot of the things I got right came from mistakes I made building my first app Clipshare. You can read more about this here.
 
-1. **Focus on core features and have a POC out quickly**. 
-2. **Keep it simple and cheap**
-3. **Build for well-known customers**
+1. **Focus on core features and have a POC out quickly**. Within 4 months of starting the development of this app I had 
+something to show to the community. It didn't have all the features I wanted it to have but it worked and it gave me the 
+opportunity to collect feedback from the users and validate if this is something that they actually find useful
+2. **Keep it simple and cheap**: Only spend time on things that add value to the users right now and don't try to future
+proof anything. I used the NextJS framework to build my ReactJS app and used Vercel to handle automatic deployment from
+my Github repo. This saved me a lot of time.
+3. **Build for well-known customers**. I knew who I was building this for and how to reach them (Facebook group, subreddit,
+Discord servers). This meant I had to spend minimal effort on the marketing side of things.
 
 ## Tradeoffs I had to make
 
-1. **The friction that comes from asking the users to upload each game manually**.
-2. **Relying too much on a third-party**.
-3. **Underestimating the difficulty of UI and UX**
+1. **The friction that comes from asking the users to upload each game manually**. In general I think it is ok to not aim
+to have a solution that encapsulate the whole market. Rather the way I approach is to first build for a niche of passionate
+people and they grow the user base by making the app attractive to more people.
+2. **Relying too much on a third-party**. Building something that is too tightely connected to an existing app of service is
+a risk because you could easily be cut off. The advantage on the other hand is that you can piggyback off of an existing audience.
 
 These are tradeoffs I was aware of when I started working on the project and I decided to proceed regardless because
 I thought value could still be delivered.
 
+## Takeaways
+
 ## Screenshots
-
-Phase 2: Web app UI design
-
-For this I decided to use Next.js and vercel for the deployment. I knew I was going to use React because I had some experience
-with it but I also wanted something else on top of it to make it easier to setup a website. I found that Next.js had everything
-I needed and the platform Vercel could handle deployments of the app.
-Sometime I realised at this step is that making a website that looks and feels good is really hard. You sort of know what
-are the features that you want the user to be able to interact with but how you structure them, what hierarchie what UI 
-components to use. That part is really hard. To help me with this process I used figma for designing the UI and wrote all 
-the features on some cards grouping them based on their relationship and putting them on a scale from least important to
-more important. My first UI looked like this.
-
-Phase 3: showing the app to users and gathering feedback
-
-[add screenshots of the evolution of the UI]
-
-Challenges
-Promoting the app is hard
