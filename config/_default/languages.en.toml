@@ -20,4 +20,5 @@ dateFormat = "2 January 2006"
   links = [
      { github = "https://github.com/dhaven" },
      { linkedin = "https://linkedin.com/in/david-haven" },
+     { email = "mailto:david.haven@pm.me"}
   ]

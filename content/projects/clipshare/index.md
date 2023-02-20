@@ -20,11 +20,26 @@ layoutBackgroundHeaderSpace: false
 #groupByYear : false
 
 ---
-
-| Type | Timespan | Programming Language | Main library used/ relied on | Concepts |
-|------|----------|----------------------|------------------------------|----------|
-| Browser extension | Feb, 2021 - June, 2021 |  Javascript | lit-element, videojs, nodejs | websockets, queues, oauth, video processing |
-
+<table class="rounded-md drop-shadow-md bg-primary-100 dark:bg-primary-900">
+  <thead>
+    <tr>
+      <th class="px-4">Type</th>
+      <th>Timespan</th>
+      <th>Programming Language</th>
+      <th>Libraries</th>
+      <th>Concepts</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="p-4">Browser extension</td>
+      <td>Feb, 2021 - June, 2021</td>
+      <td>Javascript</td>
+      <td>Lit-element, videojs, nodejs, AWS, dynamoDB</td>
+      <td>Websockets, queues, oauth, video processing</td>
+    </tr>
+  </tbody>
+</table>
 
 Clipshare is the first project that I ever took from an idea to a production ready app. Pundits and news commentators
 on Twitter often use short video clips to provide context for their tweets. A typical workflow for producing
@@ -97,8 +112,9 @@ Suprisingly, as I was working on my app Youtube was working on a similar feature
 released in July 14, 2021. See the video presentation [here](https://www.youtube.com/watch?v=A63imEmP_-I)
 
 ## Screenshots
-
-![start_editing](/img/start_editing.png)
-![finish_editing](/img/finish_editing.png)
-![send_tweet](/img/send_tweet.png)
-![tweet_send](/img/tweet_send.png)
+<div>
+  <img src="start_editing.png" />
+  <img src="finish_editing.png" />
+  <img src="send_tweet.png" />
+  <img src="tweet_send.png" />
+</div>
