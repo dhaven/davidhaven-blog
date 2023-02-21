@@ -43,22 +43,24 @@ layoutBackgroundHeaderSpace: false
 </table>
 
 
-ProtonPass is an plugin for the password manager KeePass. When using KeePass the user needs to decide where the encrypted file
+[ProtonPass](https://github.com/dhaven/protonPass) is an plugin for the password manager [KeePass](https://keepass.info/index.html). 
+When using KeePass the user needs to decide where the encrypted file
 that contains all of his password is going to be stored. Because most users want to file to be accessible on multiple devices,
 a common pattern is to store the database in the Cloud. For example using Dropbox. I wanted
-to take things further and store my database in ProtonDrive, the Cloud storage solution from Proton.
+to take things further and store my database in [ProtonDrive](https://proton.me/drive), the cloud storage solution from Proton.
 ProtonDrive is end-to-end encrypted and therefore offers and extra layer of security out-of-the-box.
 
-## Key feature
+Because this is an ongoing project, this page will change as I make progress.
 
-The user should be able to login to his Proton account from a KeePass menu and select the KeePass file that he wants to open.
+## Key feature
+The user should be able to use a KeePass database file stored in ProtonDrive and open the file inside KeePass.
 When saving a modified file. The file in the drive should also be updated.
 
 ## Development challenges
 
-When I started this project it wasn't even clear if it was feasible. And while progressing through the project it was
-hard to figure out the "how". I.e. how to perform certain actions with respect to the ProtonDrive app. This is certainly the
-project for which I was most in the dark when starting.
+When I started this project there were a lot of unknowns. The main difficulty is that I am try to do something new that hasn't been
+done before. Therefore there aren't any existing examples that I can base my work on. This can be explained by the fact that Proton
+services are quite unique in their design.
 
 ### Understanding the encryption/decryption flow
 
@@ -73,5 +75,5 @@ process where you would simply send the credentials to the backend. Instead it i
 This is an extra secure protocol in which the credentials are never send to the server.
 
 ### Building a desktop app extension
-Finally building an plugin for a windows app written in C# is also something brand new to me. I had to familiarize myself with the
-VisualStudio IDE, the C# programming language, the various libraries that I would need to use to build out my functionalities.
+Finally building an plugin for a Windows app written in C# is also something brand new to me. I had to familiarize myself with the
+VisualStudio IDE, the C# programming language and the various libraries that I would need to use to build out my functionalities.

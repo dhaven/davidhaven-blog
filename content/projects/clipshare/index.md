@@ -59,22 +59,20 @@ Clipshare simplifies this process by allowing the user to reach the same goal wi
 ## What I got right
 
 1. **Making a browser extension**. Creating a browser extension as my first app was motivated by the fact 
-that browser extensions are naturally quite limited in terms of functionalities due to their small UI. 
-It's tempting to have grand plans for a revolutionary app then never get to the end because it is 
-too much work. Here I wanted to make sure that I would be able to complete the project and have a scope 
-that was manageable.
+that browser extensions are naturally quite limited in terms of functionalities because of their small UI. 
+I wanted to make sure that I would be able to complete the project within a reasonable amount of time and avoid any scope creep.
 2. **An app that is an optimization**. Users are usually quite keen to find ways to do certain things faster.
 I believe it's generally easier to onboard users to an app that provides an improvement on top of something
-the user is already doing than try to sell the user on something new.
+the user is already doing rather than try to sell the user on something new.
 3. **The app user flow**. The app user flow is quite elegant and works well.
 
 ## What I got wrong
 
 1. **Handling video data** : Video data is very expensive to manage in terms of storage and transfer costs.
-There is also no economies of scale because the cost would increase linearly as the number of active users.
-As a solo developer with little funding this was probably not a smart idea. There are some solutions to mitage this.
-For example by not downloading the video source to the backend and instead streaming it directly from youtube to the frontend
-I could reduce storage and transfer costs.  
+There is also no economies of scale because the cost would increase linearly with the number of active users.
+As a solo developer with little funding this was probably not a smart idea. There are some solutions to mitigate this.
+For example by not downloading the video source to the backend and instead streaming it directly from Youtube to the frontend
+I could have reduced storage and transfer costs.  
 2. **Self hosting the backend** : With my background in systems engineering I wanted to build the cloud infrastructure
 from scratch using AWS. This included setting up S3 buckets, dynamoDB tables, VPC, security groups, etc...
 This was a poor choice for two reasons:
@@ -108,9 +106,9 @@ from most of my potential customers.
 
 ## Takeaways
 
-Great learning experience in some many ways
-Suprisingly, as I was working on my app Youtube was working on a similar feature called Youtube clips which was
-released in July 14, 2021. See the video presentation [here](https://www.youtube.com/watch?v=A63imEmP_-I)
+Even though I gave up on this project I was proud of what I had achieved on my own. I also got to make a lot of mistakes 
+which is an important learning experience. Suprisingly, as I was working on my app Youtube was working on a similar feature 
+called Youtube clips which was released on July 14, 2021. See the video presentation [here](https://www.youtube.com/watch?v=A63imEmP_-I)
 
 ## Screenshots
 <div class="flex flex-row gap-4 flex-wrap">

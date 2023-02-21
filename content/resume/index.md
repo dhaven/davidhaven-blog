@@ -36,8 +36,8 @@ be understood as "how is this going to add value". Who will be involved in the p
 - Involve all stakeholders and communicate on what are the changes that are going to happen and what is expected of everyone.
 - Work on the tasks
 
-Throughout the project's lifetime. My core values will be my mental framework that will help me make progress and ensure that all
-decisions taken are consistent whith previous work and the company's values.
+Throughout the duration of a project. My core values will be my mental framework that will help me make progress and ensure that all
+decisions taken are consistent with previous work and the company's values.
 
 Having had ownership of all aspects of a SAAS production infrastructure I have acquired a broad set of intersecting knowledge which helps
 me to quickly be familiar with new concepts and learn new technologies when needed.
