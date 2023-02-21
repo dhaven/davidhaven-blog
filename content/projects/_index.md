@@ -33,7 +33,7 @@ layout: "simple"
     </thead>
     <tbody>
          <tr>
-            <td><a target="_blank" href="/projects/sr-stats">SR-Stats</a></td>
+            <td><a href="/projects/sr-stats">SR-Stats</a></td>
             <td>A companion app for the popular card game Star Realms</td>
             <td><a target="_blank" href="https://sr-stats.app">site</a></br><a target="_blank" href="https://github.com/dhaven/sr-stats">github</a></td>
             <td>
@@ -45,7 +45,7 @@ layout: "simple"
             </td>
         </tr>
         <tr>
-            <td><a target="_blank" href="/projects/protonpass">ProtonPass</a></td>
+            <td><a href="/projects/protonpass">ProtonPass</a></td>
             <td>A KeePass plugin for storing KDBX files in ProtonDrive</td>
             <td><a target="_blank" href="https://github.com/dhaven/protonPass">github</a></td>
             <td>
@@ -57,7 +57,7 @@ layout: "simple"
             </td>
         </tr>
         <tr>
-            <td><a target="_blank" href="/projects/clipshare">Clipshare</a></td>
+            <td><a href="/projects/clipshare">Clipshare</a></td>
             <td>A Browser extension for clipping youtube videos and sharing them on twitter</td>
             <td><a target="_blank" href="https://github.com/dhaven/Clipshare">github</a></td>
             <td>

@@ -44,6 +44,8 @@ me to quickly be familiar with new concepts and learn new technologies when need
 
 ## Vocabulary
 
+Here is a selection of terms that are part of my daily vocabulary.
+
 <style type="text/css"><!-- #htmltagcloud{
 
 /******************************************
@@ -66,9 +68,10 @@ me to quickly be familiar with new concepts and learn new technologies when need
 
 ## Links
 
-[My CKA certification](./david-haven-cka.pdf)
+<a target="_blank" href="/resume/david-haven-cka.pdf">My CKA certification</a>
 
-[My resume in pdf format](./david-haven-resume.pdf)
+<a target="_blank" href="/resume/david-haven-resume.pdf">My resume in pdf format</a>
+
 ## Open source contributions
 
 Over the years I've contributed to the following open source projects:

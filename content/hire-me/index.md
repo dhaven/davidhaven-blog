@@ -1,5 +1,5 @@
 ---
-title: "Interested in working with me?"
+title: "Interested in working together?"
 draft: false
 
 showDate : false
@@ -7,7 +7,7 @@ showDateUpdated : false
 showHeadingAnchors : false
 showPagination : false
 showReadingTime : false
-showTableOfContents : true
+showTableOfContents : false
 showTaxonomies : false 
 showWordCount : false
 showSummary : false
@@ -21,28 +21,48 @@ layoutBackgroundHeaderSpace: false
 
 ---
 
--> What I can help with
+I will take your infrastructure to the next level. Some of the areas I have expertise in include:
+- In depth cost review and proposal of optimizations
+- Process automation
+- Implementation of new cloud native services such as Kubernetes, ArgoCD
+- Best practices for Cloud environment security.
+- And much more...
 
-Taking your infrastructure to the next level
--> In depth cost review and proposal of optimizations
--> Process automation
--> Implementation of new cloud native services such as Kubernetes, ArgoCD
--> And much more
-
--> The values that I bring with me
-Ownership: Taking ownership when things go wrong
-Clear communication: 
-Share knowledge:
-Build for the long term 
-
--> How I work (my methodology)
-
-Identify a problem. Why is this a problem worth solving? How does it add value.
-Identify one or more solutions. Based on certain criterias decide on a solution to implement
-Apply my core principles for solving the problem
-
-Involve stakeholders
+Because it's not all about achieving results but also about how you achieve them.
+I have a set of strong values that guide all of my work:
+- Ownership
+- Clear communication
+- Knowledge sharing
+- Build for the long term 
 
 -> add testimonials here
 
--> Get in touch
+**For any enquiry please get in touch by completing the following form**
+
+<form class="flex flex-col gap-4" method="post" action="https://forms.un-static.com/forms/8b640b0fb30f9a857f2f627303deced6d8aba4b6">
+  <div class="">
+    <label for="name" class="">Name*</label>
+    <div class="">
+        <input id="name" name="name" placeholder="Please enter your name" type="text" required="required" class="rounded-md drop-shadow-md dark:text-neutral-600 text-neutral">
+    </div>
+  </div>
+  <div class="">
+    <label for="email" class="">E-mail address*</label>
+    <div class="">
+      <div class="">
+        <input id="email" name="email" placeholder="Your e-mail address" type="text" required="required" class="rounded-md drop-shadow-md dark:text-neutral-600 text-neutral">
+      </div>
+    </div>
+  </div>
+  <div class="">
+    <label for="message" class="">Message*</label>
+    <div class="col-8">
+      <textarea id="message" name="message" cols="40" rows="10" required="required" class="rounded-md drop-shadow-md dark:text-neutral-600 text-neutral"></textarea>
+    </div>
+  </div>
+  <div class="">
+    <div class="">
+      <button name="submit" type="submit" class="rounded-full dark:bg-primary-700 bg-primary-100 px-4 py-2 drop-shadow-md dark:hover:bg-primary-900 hover:bg-primary-300">Send</button>
+    </div>
+  </div>
+</form>

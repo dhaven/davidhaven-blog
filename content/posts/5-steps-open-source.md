@@ -2,6 +2,22 @@
 title: "Getting started with open source contributions in 5 steps"
 date: 2023-01-16T09:42:31+01:00
 draft: false
+
+showDate : false
+showDateUpdated : false
+showHeadingAnchors : false
+showPagination : false
+showReadingTime : false
+showTableOfContents : true
+showTaxonomies : false 
+showWordCount : false
+showSummary : false
+sharingLinks : false
+showEdit: false
+showViews: true
+showLikes: true
+layoutBackgroundHeaderSpace: false
+
 ---
 
 ## Introduction
@@ -23,7 +39,9 @@ Here are 2 criteria that can help you decide. The sweet spot lies at the interse
 1. **Based on your interest**. Choosing a project that you find interesting because of the value it adds to the world will bring a lot of satisfaction with each contribution. Even better if you are a user of the project. That will make it easier to understand the source code and you will be the first to reap the benefits of your contribution.
 2. **Based on your skills**. Finding a project that uses technologies you are familiar with will make it easier and faster for you to contribute.
 
-→ Tip: Making an open source contribution can be a great opportunity to step outside your comfort zone and try your hand at a new programming language or discover a new framework!
+{{< alert icon="lightbulb" >}}
+Making an open source contribution can be a great opportunity to step outside your comfort zone and try your hand at a new programming language or discover a new framework!
+{{< /alert >}}
 
 ## 2. A deeper analysis of your project shortlist
 
@@ -43,7 +61,9 @@ Here are a few ways to make this assessment:
 
 You will find in the issue tab a list of bug reports and feature requests. Your task here will be to gage how hard it is to solve the issue. While solving issues that are too easy might not be so rewarding, delving into a complex issue that involves many moving parts might be more than you can handle.
 
-→ Tip: Look out for labels “Good first issue”. Also some issues might already outline a possible solution which can steer you in the right direction.
+{{< alert icon="lightbulb" >}}
+Look out for labels “Good first issue”. Also some issues might already outline a possible solution which can steer you in the right direction.
+{{< /alert >}}
 
 ## 4. Clone, run, reproduce
 
@@ -53,7 +73,10 @@ If you are fixing a bug it is necessary to be able to reproduce it locally. If y
 
 This can be really hard to do if you don’t have a clear process. Even simple web apps will have 1000s of lines of code. It is neither realistic nor useful to attempt to understand every part of the source code. Instead, try to isolate the portion of the source code that holds the logic that you will need to work with. How you do this is highly dependent on the type of project you are working on. For a typical web app, the browser debugger is a good place to start understanding the components that make up the UI and those that are relevant for the work you plan on doing. If you want to contribute to a CLI tool, you will often find that the each CLI command maps to a function or file in the source code.
 
-→ Tip: write down what you see! I’ve made it a habit that when I start parsing a new project’s source code, I write down all the logical connections between files, functions calls, components,… This is because it is hard to hold all the code logic in your head and easy to get lost in the source code.
+{{< alert icon="lightbulb" >}}
+Write down what you see! I’ve made it a habit that when I start parsing a new project’s source code, I write down all the logical connections between files, functions calls, components,… This is because it is hard to hold all the code logic in your head and easy to get lost in the source code.
+{{< /alert >}}
+
 
 ## Wrap up
 
