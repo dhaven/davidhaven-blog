@@ -51,12 +51,15 @@ of the game you've played.
 [SR-stats](https://sr-stats.app/) attempts to fill this gap by providing a web app where players can upload games they have played and
 view detailed statistics.
 
+**Video presentation**
+{{< youtube rwb1X5CqKE0 >}}
+
 ## Architecture
 Once the user has finished a game of Star Realms he needs to copy the game data from the options menu and paste it
 into the SR-stats app. Currently this is the only way to transfer a game between the 2 apps. 
 SR-stats is as simple web app built using NextJS (a React framework). The main role of the backend is to
 parse the input file, generate an AST and traverse the tree in order to end up with a json representation of the game which is
-stored on the MongoDB cloud.
+then stored on the MongoDB Cloud.
 
 ![architecture](/img/arch-srstats.png)
 
@@ -77,8 +80,8 @@ Discord servers). This meant I had to spend minimal effort on the marketing side
 ## Tradeoffs I had to make
 
 1. **The friction that comes from asking the users to upload each game manually**. In general I think it is ok to not aim
-to have a solution that encapsulate the whole market. Rather the way I approach is to first build for a niche of passionate
-people and they grow the user base by making the app attractive to more people.
+to have a solution that encapsulates the whole market. Rather the way I approach it is to first build for a niche of passionate
+people and then grow the user base by making the app attractive to more people.
 2. **Relying too much on a third-party**. Building something that is too tightly connected to an existing app of service is
 a risk because you could easily be cut off. The advantage on the other hand is that you can piggyback off of an existing audience.
 
@@ -87,7 +90,7 @@ I thought value could still be delivered.
 
 ## Takeaways
 
-So far this has been a great learning experience. From the technical side I got to work with ASTs and grammar and spend time building
+So far this has been a great learning experience. From the technical side I got to work with ASTs and grammars and spend time building
 the UI and UX. I found the UI and UX design particularly challenging given my lack of experience in this domain. I am nonetheless
 happy with how the app looks today which is the result of multiple UI iterations.
 

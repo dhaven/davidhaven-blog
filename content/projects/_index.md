@@ -58,7 +58,7 @@ layout: "simple"
         </tr>
         <tr>
             <td><a href="/projects/clipshare">Clipshare</a></td>
-            <td>A Browser extension for clipping youtube videos and sharing them on twitter</td>
+            <td>A Browser extension for clipping youtube videos and sharing them on Twitter</td>
             <td><a target="_blank" href="https://github.com/dhaven/Clipshare">github</a></td>
             <td>
                 <div class="flex items-center px-2 py-1 mx-2 rounded-full bg-rose-100 dark:bg-rose-900">

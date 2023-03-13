@@ -47,7 +47,7 @@ these video clips will involve the following steps:
 
 1. Download the source video to computer.
 2. Clip the video to only include what is relevant for the commentary.
-3. Post tweet with video clip.
+3. Send tweet with video clip.
 
 Clipshare simplifies this process by allowing the user to reach the same goal without leaving the browser.
 
@@ -64,7 +64,10 @@ I wanted to make sure that I would be able to complete the project within a reas
 2. **An app that is an optimization**. Users are usually quite keen to find ways to do certain things faster.
 I believe it's generally easier to onboard users to an app that provides an improvement on top of something
 the user is already doing rather than try to sell the user on something new.
-3. **The app user flow**. The app user flow is quite elegant and works well.
+3. **The app user flow**. The app user flow is quite elegant and works well. The steps are the following:
+    -  Go to Youtube on your browser and start watching a video.
+    -  Open the Clipshare extension and start editing.
+    - Finalize the edit. Write a message and send the tweet.
 
 ## What I got wrong
 
@@ -92,13 +95,13 @@ data: {
 {{< /chart >}}
 
 3. **Not knowing who my customers are**: I didn't have a well defined target customers that I knew would find this app useful.
-It was more of a hunch that I thought this is something people would find useful. Furthermore once the app was built I had no plan
+It was more of a hunch I had that people would find this useful. Furthermore once the app was built I had no plan
 on how to reach customers and let people know my app exists.
 4. **Overengineering certain aspects**: Being able to distinguish between critical features and nice-to-have features is
 very important if you want to be able to ship quickly. One feature which took me some time to implement and in hindsight
 wasn't a critical one is the implementation of a cache mechanism which ensures that if the user leaves the app he could 
 resume where he had left off when he came back to the app.
-5. **Creating an "unfriendly" app from the point of vue of Youtube and Twitter**. Clipshare is both "youtube downloader" 
+5. **Creating an "unfriendly" app from the point of vue of Youtube and Twitter**. Clipshare is both a "youtube downloader" 
 and "custom twitter client". Neither of these concepts are much appreciated by Youtube or Twitter.
 This means that I'm playing a risky game where I could get cut off from the Twitter API or not get accepted on the Chrome
 store. It is this observation which also led me to develop the app for Firefox only which meant cutting myself off 
@@ -107,7 +110,7 @@ from most of my potential customers.
 ## Takeaways
 
 Even though I gave up on this project I was proud of what I had achieved on my own. I also got to make a lot of mistakes 
-which is an important learning experience. Suprisingly, as I was working on my app Youtube was working on a similar feature 
+which is an important learning experience. Surprisingly, as I was working on my app Youtube was working on a similar feature 
 called Youtube clips which was released on July 14, 2021. See the video presentation [here](https://www.youtube.com/watch?v=A63imEmP_-I)
 
 ## Screenshots

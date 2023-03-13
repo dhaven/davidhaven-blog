@@ -112,13 +112,13 @@ defaultBackgroundImage = "img/mesh-gradient.png" # used as default for backgroun
   #cardView = false
 
 [firebase]
-  # apiKey = "XXXXXX"
-  # authDomain = "XXXXXX"
-  # projectId = "XXXXXX"
-  # storageBucket = "XXXXXX"
-  # messagingSenderId = "XXXXXX"
-  # appId = "XXXXXX"
-  # measurementId = "XXXXXX"
+  apiKey = "AIzaSyBhBtqXrAZ86lVr4kXAqZjoQkXCgvsgxsA"
+  authDomain = "blog-9c43e.firebaseapp.com"
+  projectId = "blog-9c43e"
+  storageBucket = "blog-9c43e.appspot.com"
+  messagingSenderId = "478837810755"
+  appId = "1:478837810755:web:2c770aa0d35bb6370816f6"
+  measurementId = "G-SBLCXRKLGC"
 
 [fathomAnalytics]
   # site = "ABC12345"

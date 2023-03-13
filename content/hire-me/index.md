@@ -13,7 +13,7 @@ showWordCount : false
 showSummary : false
 sharingLinks : false
 showEdit: false
-showViews: false
+showViews: true
 showLikes: false
 layoutBackgroundHeaderSpace: false
 
@@ -24,7 +24,7 @@ layoutBackgroundHeaderSpace: false
 I will take your infrastructure to the next level. Some of the areas I have expertise in include:
 - In depth cost review and proposal of optimizations
 - Process automation
-- Implementation of new cloud native services such as Kubernetes, ArgoCD
+- Implementation of new cloud native services such as Kubernetes or ArgoCD
 - Best practices for Cloud environment security.
 - And much more...
 
@@ -33,10 +33,19 @@ I have a set of strong values that guide all of my work:
 - Ownership
 - Clear communication
 - Knowledge sharing
-- Build for the long term 
+- Build for the long term
+- Everything as code
 
--> add testimonials here
+## What people I've worked with have to say about me
 
+> I worked with David for a little over two years, with the last year as his manager. In that time, I was continually impressed by
+> David's intelligence, problem solving, and his ability to get the hard work done. He engineers solutions that are well thought out
+> and easily maintainable. David is an absolute pleasure to work with and a true professional. I am happy to recommend him without
+> reservation. He was an asset to our team and company, and I have no doubt that he will be to yours as well.
+
+**Steven Meunier**, Staff Systems Engineer
+
+---
 **For any enquiry please get in touch by completing the following form**
 
 <form class="flex flex-col gap-4" method="post" action="https://forms.un-static.com/forms/8b640b0fb30f9a857f2f627303deced6d8aba4b6">
