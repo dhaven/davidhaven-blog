@@ -1,6 +1,6 @@
 ---
-title: "david haven home website"
-description: "welcome message"
+title: "David Haven"
+description: "A Systems Engineer's home"
 ---
 
 Thanks for making your way to my website!
