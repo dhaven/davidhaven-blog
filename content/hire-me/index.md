@@ -52,21 +52,21 @@ I have a set of strong values that guide all of my work:
   <div class="">
     <label for="name" class="">Name*</label>
     <div class="">
-        <input id="name" name="name" placeholder="Please enter your name" type="text" required="required" class="rounded-md drop-shadow-md dark:text-neutral-600 text-neutral">
+        <input id="name" name="name" placeholder="Please enter your name" type="text" required="required" class="rounded-md drop-shadow-md dark:text-neutral-600">
     </div>
   </div>
   <div class="">
     <label for="email" class="">E-mail address*</label>
     <div class="">
       <div class="">
-        <input id="email" name="email" placeholder="Your e-mail address" type="text" required="required" class="rounded-md drop-shadow-md dark:text-neutral-600 text-neutral">
+        <input id="email" name="email" placeholder="Your e-mail address" type="text" required="required" class="rounded-md drop-shadow-md dark:text-neutral-600">
       </div>
     </div>
   </div>
   <div class="">
     <label for="message" class="">Message*</label>
     <div class="col-8">
-      <textarea id="message" name="message" cols="40" rows="10" required="required" class="rounded-md drop-shadow-md dark:text-neutral-600 text-neutral"></textarea>
+      <textarea id="message" name="message" cols="40" rows="10" required="required" class="rounded-md drop-shadow-md dark:text-neutral-600"></textarea>
     </div>
   </div>
   <div class="">
