@@ -45,13 +45,13 @@ layout: "simple"
             </td>
         </tr>
         <tr>
-            <td><a href="/projects/protonpass">ProtonPass</a></td>
+            <td><a href="/projects/protondrivesync">ProtonDriveSync</a></td>
             <td>A KeePass plugin for storing KDBX files in ProtonDrive</td>
             <td><a target="_blank" href="https://github.com/dhaven/protonPass">github</a></td>
             <td>
-                <div class="flex justify-center px-2 py-1 mx-2 rounded-full bg-blue-100 dark:bg-blue-900">
-                    <span class="font-medium text-blue-700 dark:text-blue-400">
-                        POC
+                <div class="flex justify-center px-2 py-1 mx-2 rounded-full bg-primary-100 dark:bg-primary-900">
+                    <span class="font-medium text-primary-700 dark:text-primary-400">
+                        active
                     </span>
                 </div>
             </td>

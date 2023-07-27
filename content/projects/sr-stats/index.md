@@ -92,7 +92,7 @@ I thought value could still be delivered.
 
 So far this has been a great learning experience. From the technical side I got to work with ASTs and grammars and spend time building
 the UI and UX. I found the UI and UX design particularly challenging given my lack of experience in this domain. I am nonetheless
-happy with how the app looks today which is the result of multiple UI iterations.
+happy with how the app looks which is the result of multiple UI iterations.
 
 From a human level, putting something I built in front of users, listening to feedback and building a community around the app 
 were all things I was new at and I found them very rewarding. 
