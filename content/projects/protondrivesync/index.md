@@ -27,16 +27,14 @@ layoutBackgroundHeaderSpace: false
       <th class="px-4">Type</th>
       <th>Duration</th>
       <th>Programming Language</th>
-      <th>Libraries</th>
       <th>Concepts</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td class="p-4">desktop app</td>
+      <td class="p-4">plugin</td>
       <td>Dec, 2022 - June 2023</td>
       <td>C#</td>
-      <td>N/A</td>
       <td>pgp, public/private cryptography</td>
     </tr>
   </tbody>
@@ -52,7 +50,7 @@ is an end-to-end encrypted storage solution. ProtonDriveSync is a plugin that le
 
 ProtonDriveSync is available on the official list of plugins for KeePass: [link](https://keepass.info/plugins.html#pdsync)
 
-The following sections describe my biggest takeaways from working on this project
+The following sections describe my main takeaways from working on this project
 
 ## Architecture
 
@@ -71,9 +69,8 @@ particularly difficult:
 follow. No StackOverflow snippets to copy from and no framework to use as a baseline. Services built by the Proton team don't support 
 third-party integrations. This means there is no public API. This can be explained by the nature of Proton's services
 which are end-to-end encrypted and therefore need to ensure strong security standards. With third-party integrations you open
-the door to new attacks and also potentially leak user's data to third-parties. Building something that lacks any developer support is difficult. 
-My approach to solving this was to use the Proton apps [source code](https://github.com/ProtonMail/WebClients) as template, understand the logic 
-they implemented and "copy" the same logic to my own app.
+the door to new attacks and also potentially leaking user's data to third-parties. Building something that lacks any developer support is difficult. 
+My approach to solving this was to dive into the Proton apps [source code](https://github.com/ProtonMail/WebClients) to understand the logic and then implement the same logic in my own app.
 
 **Navigating large codebases**: You can very easily get lost when parsing large codebases. After going 20 levels deep in a call stack you 
 might have forgotten what you were looking for. To make sure I didn’t get lost I relied on note taking. Describing in words what a certain file/function 
