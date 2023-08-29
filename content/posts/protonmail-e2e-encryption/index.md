@@ -14,11 +14,18 @@ showWordCount : false
 showSummary : false
 sharingLinks : false
 showEdit: false
-showViews: true
-showLikes: true
+showViews: false
+showLikes: false
 layoutBackgroundHeaderSpace: false
 
 ---
+
+{{< lead >}}
+<em>In this article I describe the conceptual building blocks that make up an e2ee channel. Using
+email communication as the backdrop we go into the details of what are the cryptographic 
+primitives that comprise and end-to-end encrypted  channel. We finish with a description of
+how Proton has implemented these concepts to provide the e2ee email service Proton Mail.</em>
+{{< /lead >}}
 
 ## What is end-to-end encryption?
 
@@ -72,7 +79,7 @@ to the keys required for encrypting and decrypting the information.
 *One reason an email provider wants access to your emails is to improve it’s products. For example 
 if you book a flight and receive a confirmation email, Gmail will automatically suggest the creation of an 
 event in your calendar by using the reservation information in your email. At the same time, email content 
-helps Google build a accurate representation of who you are and uses this to better sell targeted ads.*
+helps Google build an accurate representation of who you are and uses this to better sell targeted ads.*
 {{< /alert >}}
 
 Encryption is a useful tool for preventing unwanted parties from accessing data.
@@ -118,7 +125,7 @@ key** (or secret key) and is used to decrypt the data encrypted by the public ke
 In this scenario only the public key needs to be shared between parties that want to communicate. 
 Amy will share her public key with Brian and Brian will share his public key with Amy. Furthermore the public
 key can only be used for encryption so even if it is intercepted by someone else this does not represent a risk
-because they will not be able to decrypt any message
+because they will not be able to decrypt any message.
 
 <figure class="flex flex-col items-center image">
   <img class="rounded-md" src="/posts/protonmail-e2e-encryption/images/public-key-sharing.png" />

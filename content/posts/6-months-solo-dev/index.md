@@ -14,8 +14,8 @@ showWordCount : false
 showSummary : false
 sharingLinks : false
 showEdit: false
-showViews: true
-showLikes: true
+showViews: false
+showLikes: false
 layoutBackgroundHeaderSpace: false
 
 ---
