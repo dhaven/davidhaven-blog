@@ -3,7 +3,7 @@ title: "End-to-end encryption with Proton Mail"
 date: 2023-08-22
 draft: false
 
-showDate : false
+showDate : true
 showDateUpdated : false
 showHeadingAnchors : false
 showPagination : false
@@ -21,17 +21,17 @@ layoutBackgroundHeaderSpace: false
 ---
 
 {{< lead >}}
-<em>In this article I describe the conceptual building blocks that make up an e2ee channel. Using
-email communication as the backdrop we go into the details of what are the cryptographic 
-primitives that comprise and end-to-end encrypted  channel. We finish with a description of
-how Proton has implemented these concepts to provide the e2ee email service Proton Mail.</em>
+<em>In this article I describe the conceptual building blocks that make up an end-to-end
+encrypted (E2EE) channel. Using email communication as the backdrop I examine the cryptographic 
+primitives that comprise an end-to-end encrypted  channel. I conclude with a description of
+how Proton has implemented these concepts to provide the E2EE email service Proton Mail.</em>
 {{< /lead >}}
 
 ## What is end-to-end encryption?
 
 If Amy wants to send an email to Brian the email will transit by the email provider you are using.
 This can for instance be Gmail or Outlook. The email provider is responsible for relaying the email 
-to it’s destination. 
+to its destination. 
 
 <figure class="flex flex-col items-center image">
   <img class="rounded-md" src="/posts/protonmail-e2e-encryption/images/simple-email-sending.png" />
@@ -42,14 +42,14 @@ forwarded to the recipient of the email.</em>
 </figure>
 
 Broadly speaking there are 2 ways your email could be accessed by unwanted third-parties:
-1. **When the email is in transit from your laptop to the email provider**. Securing communication between 
-your laptop and the email provider’s servers is what HTTPS is for. 
-It guaranties that nobody is impersonating the email provider and provides a secure communication 
+1. **When the email is in transit from your laptop to the email provider**. However, HTTPS ensures
+a secure communication between your laptop and the email provider's servers.
+It guaranties that nobody can impersonate the email provider and provides a secure communication 
 channel between yourself and the servers.
 2. **When the email is stored on the provider’s servers (at rest)**. The provider will store your emails 
-on it’s server. If this wasn’t the case you wouldn’t be able 
+on it’s server. This allows you
 to see the email on your mobile after sending it from your laptop. To prevent unwanted third-parties 
-from accessing your emails the provider will encrypt the email when it is stored.
+from accessing your emails, the provider will encrypt the email when it is stored.
 
 ![Email attack vectors](/posts/protonmail-e2e-encryption/images/email-attack-vectors.png)
 
@@ -89,7 +89,7 @@ Brian and Amy have access to (
     <img src="/posts/protonmail-e2e-encryption/images/green-key.png" alt="" class="w-8 h-6 rounded-full m-0" />
 </span> ).
 
-Such a communication channel can be called **end-to-end encrypted** because it guaranties that only the 2 ends 
+Such a communication channel is called **end-to-end encrypted** because it guarantees that only the 2 ends 
 of the communication channel (Amy and Brian) have access to the decrypted content.
 
 <figure class="flex flex-col items-center image">
@@ -115,15 +115,15 @@ You can use PGP to encrypt your email message before sending it to it's destinat
 PGP to recover the message once he receives the email.
 
 While diving into the details of PGP goes beyond the scope of this post, one important concept used by PGP is 
-the concept of **public key cryptography**. With public key cryptography you generate 2 keys where one is called 
-the **public key** and can only be used to encrypt data and one is called **private 
-key** (or secret key) and is used to decrypt the data encrypted by the public key.
+the concept of **public key cryptography**. With public key cryptography you generate 2 keys: the **public key** 
+which can only be used to encrypt data and the **private 
+key** (or secret key) used to decrypt the data encrypted by the public key.
 
 ![Asymmetric cryptography](/posts/protonmail-e2e-encryption/images/asymmetric-encryption.png)
 
 
-In this scenario only the public key needs to be shared between parties that want to communicate. 
-Amy will share her public key with Brian and Brian will share his public key with Amy. Furthermore the public
+In this scenario, only the public key needs to be shared between parties that want to communicate. 
+Amy will share her public key with Brian and Brian will share his public key with Amy. Furthermore, the public
 key can only be used for encryption so even if it is intercepted by someone else this does not represent a risk
 because they will not be able to decrypt any message.
 
@@ -135,7 +135,7 @@ because they will not be able to decrypt any message.
 </figure>
 
 Now if Amy wants to send a message to Brian she can encrypt the message using Brian’s public key. Only Brian 
-can decrypt the message because only he has access to the associated private key. Likewise if Brian want’s to 
+can decrypt the message because only he has access to the associated private key. Likewise, if Brian want’s to 
 send a response message to Amy he can use Amy’s public key to encrypt the message.
 
 PGP depends on this key exchange to guaranty a secure communication between Amy and Brian.
@@ -155,12 +155,12 @@ The message is encrypted with a symmetric key which is then itself encrypted wit
 The encrypted message and encrypted key are sent together.*
 {{< /alert >}}
 
-As a software, PGP never gained widespread adoption. For a start it is very technical to use and therefore 
-not suitable for most people. The security of PGP also depends on how well you can keep your private 
+As a software, PGP never gained widespread adoption. For a start it is very technical to use so
+difficult for those who are not tech-savvy. The security of PGP also depends on how well you can keep your private 
 key secure which even for tech-savvy people can be [too much to manage](https://arstechnica.com/information-technology/2016/12/op-ed-im-giving-up-on-pgp/).  
 
-The team behind Proton Mail realized that to make encrypted email ubiquitous you had to provide a user 
-experience close to the one you would have on other providers such as Gmail or Outlook. The user should 
+The team behind Proton Mail realized that to make encrypted email more widespread, the user 
+experience should be closer to that of other providers such as Gmail or Outlook. The user should 
 only have to login to his account, write his email and send it to the recipient without having to worry 
 about encryption keys. While PGP provides a good cryptographic foundation for security,
  it’s main pain points had to be solved.
@@ -169,14 +169,14 @@ about encryption keys. While PGP provides a good cryptographic foundation for se
 
 Here are the 3 requirements that ProtonMail had to reconcile:
 
-1. **PGP should be used to guaranty E2E encryption of email content.**
+1. **PGP should be used to guarantee E2E encryption of email content.**
 2. **End users should not be required to manage their private keys or be in any way involved in the encryption process.**
-3. **It should be infeasible for Proton Mail to access the email content (i.e. Proton Mail should never 
+3. **It should be impossible for Proton Mail to access the email content (i.e. Proton Mail should never 
 have access to the user’s private key)**
 
-To solve **2.** Proton needs to store your private key on  it’s servers. When you access your emails either 
+To solve **2.** Proton needs to store your private key on its servers. When you access your emails either 
 from your desktop or mobile the client app will ask Proton’s server for your private key which will then be 
-sent over to you. To make sure that this approach does not conflict with **3.** Proton only stores on it’s 
+sent over to you. To make sure that this approach does not conflict with **3.**, Proton only stores on its 
 servers a key which is **locked with a passphrase** (
 <span class="inline-flex align-middle">
     <img src="/posts/protonmail-e2e-encryption/images/locked-key.png" alt="" class="w-8 h-7 rounded-full m-0" />
@@ -214,12 +214,12 @@ which is in a nutshell how ProtonMail works.
 
 If you go to **Setting → Encryption and Keys** when logged in to your Proton account you will find that 
 you actually have more than one private key. There is the “Email encryption key” (also referred to 
-as the address key) and the Account key (also referred to as the user key) with each their own responsibility.
+as the address key) and the "Account key" (also referred to as the user key) each having their own responsibility.
 
 → The **account key** is used to encrypt account wide information such as 
 your contact list and is also used to recover your account in case you forget your password.
 
-→ **Address keys** are used to encrypt and decrypt the content of emails being sent. For each address you 
+→ **Address keys** are used to encrypt and decrypt the content of emails being sent. For each email address you 
 have there is one address key.
 
 Your password is only used to unlock your account key. Each address key is locked by a passphrase which 
@@ -235,7 +235,7 @@ but is also the foundation of how your email contents is encrypted. This means t
 your password you might be able to regain access to your account by means of recovery but your emails
 will no longer be readable because the keys used to encrypt their content can no longer be unlocked.
 
-You can learn more about about account recovery by reading the official documentation [here](https://proton.me/support/set-account-recovery-methods).
+You can learn more about account recovery by reading the official documentation [here](https://proton.me/support/set-account-recovery-methods).
 
 ## Wrap up
 
@@ -243,6 +243,7 @@ By building on top of a proven technology and by using strong cryptography conce
 end-to-end encryption available to a broad public. While the experience provided by Proton has abstracted away
 the underling encryption concepts some basic understanding of the primitives being used can help to better harness
 the privacy tools out there and be less reliant on simply "trusting" the service. 
+
 Proton decided to build on top of PGP but it is not the
 only way to ensure privacy of communications. For example [Signal](https://signal.org/) developed it's own Protocol 
 called the signal protocol and which is also [in use by Whatsapp](https://scontent-cdg4-3.xx.fbcdn.net/v/t39.8562-6/328495424_498532869106467_756303412205949548_n.pdf?_nc_cat=104&ccb=1-7&_nc_sid=ad8a9d&_nc_ohc=DG1P4TyHCd4AX_vaZQ5&_nc_ht=scontent-cdg4-3.xx&oh=00_AfDWXF6kQWMkTosoxb2yfWBYaQUEdP0JawkeYKJX6Pcanw&oe=64E74FFC) to support end-to-end encryption.

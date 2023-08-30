@@ -3,7 +3,7 @@ title: "Getting started with open source contributions in 5 steps"
 date: 2023-01-16T09:42:31+01:00
 draft: false
 
-showDate : false
+showDate : true
 showDateUpdated : false
 showHeadingAnchors : false
 showPagination : false

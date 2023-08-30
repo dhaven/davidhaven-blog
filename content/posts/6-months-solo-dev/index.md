@@ -3,7 +3,7 @@ title: "What I learned from working 6 months as a solo developer"
 date: 2023-07-31
 draft: false
 
-showDate : false
+showDate : true
 showDateUpdated : false
 showHeadingAnchors : false
 showPagination : false
