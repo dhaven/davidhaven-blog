@@ -36,6 +36,8 @@ Outcome-driven, I aim to implement long lasting solutions that are simple, well 
 
 → Assess the security posture of your cloud infrastructure and suggest path to improvements.
 
+Need something else? Don’t hesitate to get in touch!
+
 ## What people I've worked with have to say about me
 
 > I worked with David for a little over two years, with the last year as his manager. In that time, I was continually impressed by

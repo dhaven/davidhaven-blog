@@ -1,5 +1,5 @@
 ---
-title: "Resume"
+title: "About me"
 draft: false
 
 showDate : false
@@ -40,39 +40,11 @@ layoutBackgroundHeaderSpace: false
   </tbody>
 </table>
 
-## Experience
-
-<table>
-    <thead>
-        <tr>
-            <th>Company</th>
-            <th>Role</th>
-            <th>Dates</th>
-            <th>Location</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><a href="https://www.gonitro.com/" target="_blank">Nitro Inc.</a></td>
-            <td>Systems Engineer</td>
-            <td>2020 - 2022</td>
-            <td>Dublin, Ireland</td>
-        </tr>
-        <tr>
-            <td><a href="https://www.tmogroup.asia/" target="_blank">TMO Group</a></td>
-            <td>Systems Engineer</td>
-            <td>2017 - 2019</td>
-            <td>Shanghai, China</td>
-        </tr>
-    </tbody>
-</table>
-
-## About me
-
 I'm a passionate Systems Engineer with strong experience in Cloud technologies. Over the last 5 years I have led to completion
 many projects involving Cloud infrastructure, developer tooling and security. Having had ownership of all aspects of a 
-SAAS production's infrastructure I have acquired a broad set of intersecting knowledge which helps
-me to quickly become familiar with new concepts and learn new technologies when needed.
+SAAS production's infrastructure I have acquired a broad set of intersecting knowledge. I’m constantly looking to learn 
+from my peers and grow by tackling new problems and getting out of my comfort zone. More info about my work experience is
+in my <a target="_blank" href="/resume/david-haven-resume.pdf">resume</a>.
 
 Projects I have worked on have given me the opportunity to 
 refine a set of guiding **principles** which help me in my work. Some of these principles include:
@@ -82,7 +54,7 @@ refine a set of guiding **principles** which help me in my work. Some of these p
 - Knowledge sharing
 - Build for the long term
 
-I have also developed a **methodology** which helps me proceed in a systematic way through the stages of a project. The broad steps are:
+I have also developed a **methodology** which helps me to proceed in a systematic way through the stages of a project. The broad steps are:
 - An initial document that lays out the **who, why and how**. "Why" this is something that is worth spending time on. This is should always
 be understood as "how is this going to add value". "Who" will be involved in the project and "how" will the identified "problem" will be solved.
 - Proceed to decompose the project into sub-problems with clearly defined timeline.
