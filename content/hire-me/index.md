@@ -21,20 +21,20 @@ layoutBackgroundHeaderSpace: false
 
 ---
 
-I will take your infrastructure to the next level. Some of the areas I have expertise in include:
-- In depth cost review and proposal of optimizations
-- Process automation
-- Implementation of new cloud native services such as Kubernetes or ArgoCD
-- Best practices for Cloud environment security.
-- And much more...
+Experiencing ballooning cloud bills, lack  of visibility in your cloud operations or flaky security? 
+I’m here to help. I’ve worked for 5 years with AWS and other cutting edge technologies such as Kubernetes 
+and Terraform to deliver the infrastructure that is needed to confidently grow your business.  
+Outcome-driven, I aim to implement long lasting solutions that are simple, well documented and maintainable.
 
-Because it's not all about achieving results but also about how you achieve them.
-I have a set of strong values that guide all of my work:
-- Ownership
-- Clear communication
-- Knowledge sharing
-- Build for the long term
-- Everything as code
+### How I can help
+
+→ Shape your infrastructure for scalability and resiliency.
+
+→ Deep cost analysis of your cloud operations and how to reduce the bill.
+
+→ Improve developer velocity through a modern CI/CD approach.
+
+→ Assess the security posture of your cloud infrastructure and suggest path to improvements.
 
 ## What people I've worked with have to say about me
 
