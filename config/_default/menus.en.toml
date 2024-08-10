@@ -28,11 +28,11 @@
   weight = 10
   cta = false
 
-[[main]]
-  name = "Hire me!"
-  pageRef = "hire-me"
-  weight = 20
-  cta = true
+#[[main]]
+#  name = "Hire me!"
+#  pageRef = "hire-me"
+#  weight = 20
+#  cta = true
 
   
 
