@@ -46,12 +46,12 @@ release process, another for the operational process, etc. It’s the traditiona
 <figure class="flex flex-col items-center image">
   <img class="rounded-md" src="/posts/my-devops-definition/images/no-devops.png" />
   <figcaption class="mx-2">
-    <em>This model suffers from slow feedback and divergent goals between teams</em>
+    <em>This traditional siloed model suffers from slow feedback and divergent goals between teams</em>
   </figcaption>
 </figure>
 
 A <u>strong</u> 
-ownership means you own the service end-to-end. It isn’t limited to the code you write but includes 
+ownership means you own the service end-to-end. This ownership isn’t limited to the code you write but includes 
 all components required for the application's lifecycle such as CI/CD pipelines, artifacts, storage, logging and 
 monitoring, etc. And it extends through all stages of the release (dev → staging → prod).
 
@@ -62,7 +62,7 @@ and processes. This team can be referred to as the DevOps team.
 <figure class="flex flex-col items-center image">
   <img class="rounded-md" src="/posts/my-devops-definition/images/devops-diagram.png" />
   <figcaption class="mx-2">
-    <em>Team A can quickly iterate</em>
+    <em>DevOps model: Team A can quickly iterate</em>
   </figcaption>
 </figure>
 
