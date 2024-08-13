@@ -126,6 +126,6 @@ readiness checklist to ensure that all microservices reach a certain standard.
 
 DevOps is one of those words everyone assumes they know what it means. This can be detrimental as nobody is working towards 
 a common shared goal. Sometimes people agree on what they <em>think</em> it is but actually miss the whole point and will 
-therefore never truly unlock it’s potential. The thing is, unless it’s key tenants are well understood 
+therefore never truly unlock its potential. The thing is, unless its key tenants are well understood 
 and an honest introspection of the current way of working is done, DevOps will remain elusive. My hope is that with 
 this article I have managed to cut through the noise and shine some light on what matters the most: the ownership mindset.
